@@ -702,7 +702,7 @@ if(loading) return <div className="h-[100vh] w-full flex justify-center items-ce
           )}
         </div>
         <div className="room-listings">
-          {hotelData.rooms.map((_,index) => (
+          {hotelData.rooms.map((_:any,index:number) => (
             <RoomCard
               setTotalPrices={setTotalPrices}
               setRoomData={setRoomData}
