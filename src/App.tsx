@@ -21,6 +21,7 @@ import ScrollToTop from './lib/scroolToTop';
 import CustomBookingEnginePage from '@/pages/CustomBookingEnginePage';
 import BookingPage from './pages/bookingSuccess';
 import ReactWhatsapp from 'react-whatsapp';
+import CityHotelList from './pages/cityHotelList';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/hotels" element={<Hotels />} />
-            <Route path="/booking" element={<Booking />} />
+            <Route path="/hotels" element={<Hotels />} />
+            <Route path="/cityHotels" element={<CityHotelList />} />
             <Route path="/successfulBooking/:bookingId" element={<BookingPage />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />

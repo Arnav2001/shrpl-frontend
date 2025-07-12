@@ -58,6 +58,7 @@ export default {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
+        burntBrown: '#661F04',
       },
       keyframes: {
         'accordion-down': {

@@ -31,6 +31,9 @@ import HomeForm from "@/components/homeForm";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ParallaxProvider } from 'react-scroll-parallax';
+import TrendingCity from "@/components/trendingCity";
+import AllCities from "@/components/allCities";
+import PropertyByType from "@/components/propertyByType";
 
 
 function Facilities({ }) {
@@ -698,8 +701,11 @@ export default function Home() {
 
 
         <WhyChooseSaavi />
-
-
+        <div className="w-full flex flex-col justify-center items-center">
+        <TrendingCity/>
+        <PropertyByType/>
+        <AllCities />
+        </div>
         {/* Our Facilities */}
         <Facilities />
 

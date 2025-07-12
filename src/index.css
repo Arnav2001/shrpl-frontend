@@ -64,7 +64,9 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 /* Light and Dark Theme */
 @media (prefers-color-scheme: light) {
   :root {
