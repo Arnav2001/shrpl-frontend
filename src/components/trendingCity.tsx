@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 
 const TrendingCity = () => {
   const ref = useRef(null);
@@ -23,8 +24,8 @@ const TrendingCity = () => {
 
       <div className="w-full">
         <div className=" w-full h-[400px]  grid grid-cols-2 gap-6 items-center">
-          
-          <div className=" h-full w-full">
+         
+          <Link to={"/cityHotels/New Delhi"}  className=" h-full w-full">
           <div
             className="relative w-full  overflow-hidden cursor-pointer rounded-lg h-full "
             style={{
@@ -40,8 +41,10 @@ const TrendingCity = () => {
             </h3>
             </div>
           </div>
-          </div>
-          <div className=" h-full w-full">
+          </Link>
+
+
+          <Link to={"/cityHotels/Bengaluru"} className=" h-full w-full">
           <div
             className="relative w-full overflow-hidden cursor-pointer rounded-lg h-full "
             style={{
@@ -58,11 +61,11 @@ const TrendingCity = () => {
             </h3>
             </div>
           </div>
-          </div>
+</Link>
         </div>
         <div className="w-full h-[400px] pt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center">
-          
-          <div className=" h-full ">
+         
+          <Link to={"/cityHotels/Mumbai"} className=" h-full ">
           <div
             className="relative w-full overflow-hidden cursor-pointer rounded-lg h-full "
             style={{
@@ -78,8 +81,8 @@ const TrendingCity = () => {
             </h3>
             </div>
           </div>
-          </div>
-          <div  className=" h-full w-full">
+          </Link>
+          <Link to={"/cityHotels/Chennai"}  className=" h-full w-full">
           <div
             className="relative w-full overflow-hidden cursor-pointer rounded-lg h-full "
             style={{
@@ -95,8 +98,8 @@ const TrendingCity = () => {
             </h3>
             </div>
           </div>
-          </div>
-          <div className=" h-full w-full">
+          </Link>
+          <Link to={"/cityHotels/Varanasi"} className=" h-full w-full">
           <div
             className="relative w-full overflow-hidden cursor-pointer rounded-lg h-full "
             style={{
@@ -112,7 +115,7 @@ const TrendingCity = () => {
             </h3>
             </div>
           </div>
-        </div>
+        </Link>
         </div>
       </div>
       </motion.header>

@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import  { useRef } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const cities = [
   {
@@ -115,7 +116,7 @@ const AllCities = () => {
           className="flex w-full no-scrollbar overflow-x-auto scrollbar-hide space-x-4 scroll-smooth"
         >
           {cities.map((val, index) => (
-            <div key={index}>
+            <Link to={`/cityHotels/${val.cityName}`} key={index}>
               <div
                 className="min-w-[200px] rounded-lg h-[150px] bg-gray-300 flex items-center justify-center"
                 style={{
@@ -126,7 +127,7 @@ const AllCities = () => {
               />
               <h5 className="text-black mt-2">{val.cityName}</h5>
               <p className="text-gray-500">{val.numProperties} properties</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

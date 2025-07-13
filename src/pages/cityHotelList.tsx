@@ -1,4 +1,5 @@
 import { FaStar } from "react-icons/fa";
+import { useParams } from "react-router-dom";
 
 const hotels = [
   {
@@ -139,6 +140,7 @@ const hotels = [
 ];
 
 const CityHotelList = () => {
+   const { city } = useParams();
   return (
     <div className="w-full grid grid-cols-2 my-12 gap-12 px-12">
       {hotels.map((val, index) => (
@@ -158,7 +160,7 @@ const CityHotelList = () => {
 
             <div className="ml-4">
               <h2 className="text-2xl font-bold ">{val.hotelName}</h2>
-              <p className="mb-4 text-gray-600 leading-relaxed whitespace-pre-line">{val.location}</p>
+              <p className="mb-4 text-gray-600 leading-relaxed whitespace-pre-line">{city}</p>
               <p>{val.desc}</p>
             </div>
           </div>
