@@ -22,6 +22,7 @@ import CustomBookingEnginePage from '@/pages/CustomBookingEnginePage';
 import BookingPage from './pages/bookingSuccess';
 import ReactWhatsapp from 'react-whatsapp';
 import CityHotelList from './pages/cityHotelList';
+import PropertyByTypeList from './pages/propertyByTypeList';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="/hotels" element={<Hotels />} />
             <Route path="/hotels" element={<Hotels />} />
             <Route path="/cityHotels/:city" element={<CityHotelList />} />
+            <Route path="/propertyByType/:propertyByType" element={<PropertyByTypeList />} />
             <Route path="/successfulBooking/:bookingId" element={<BookingPage />} />
             <Route path="/events" element={<Events />} />
             <Route path="/gallery" element={<Gallery />} />

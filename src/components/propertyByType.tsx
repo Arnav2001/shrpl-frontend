@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import  { useRef } from "react";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const proprtiesType = [
   {
@@ -112,7 +113,7 @@ const PropertyByType = () => {
           className="flex w-full no-scrollbar overflow-x-auto scrollbar-hide space-x-4 scroll-smooth"
         >
           {proprtiesType.map((val, index) => (
-            <div key={index}>
+            <Link to={`/propertyByType/${val.propertyType}`} key={index}>
               <div
                 className="min-w-[200px] rounded-lg h-[200px] bg-gray-300 flex items-center justify-center"
                 style={{
@@ -123,7 +124,7 @@ const PropertyByType = () => {
               />
               <h5 className="text-black mt-2">{val.propertyType}</h5>
     
-            </div>
+            </Link>
           ))}
         </div>
       </div>
