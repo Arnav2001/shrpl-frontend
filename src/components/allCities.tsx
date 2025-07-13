@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const cities = [
   {
-    cityName: "New Delhi",
+    cityName: "New Delhi", 
     cityImageUrl:
       "https://q-xx.bstatic.com/xdata/images/city/170x136/684765.jpg?k=3f7d20034c13ac7686520ac1ccf1621337a1e59860abfd9cbd96f8d66b4fc138&o=",
     numProperties: "3,969",
