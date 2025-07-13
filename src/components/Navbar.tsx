@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { content } from "@/lib/content";
-import logo from "../../public/assets/saavi_logo.jpeg";
+import logo from "../../public/assets/shrpl.jpeg";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import "@fortawesome/fontawesome-free/css/all.min.css";

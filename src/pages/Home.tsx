@@ -697,15 +697,16 @@ export default function Home() {
               <HotelCarousel />
             </div>
           </div>
-        </motion.section>
+        
 
 
-        <WhyChooseSaavi />
-        <div className="w-full flex flex-col justify-center items-center">
+        <div className="w-full flex mb-6 flex-col justify-center items-center">
         <TrendingCity/>
         <PropertyByType/>
         <AllCities />
         </div>
+        </motion.section>
+        <WhyChooseSaavi />
         {/* Our Facilities */}
         <Facilities />
 
